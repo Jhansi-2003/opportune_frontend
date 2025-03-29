@@ -1,0 +1,204 @@
+/* ✅ Top Navbar (for mobile) */
+.top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    background-color: var(--dark);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 15px;
+}
+
+/* ✅ Hamburger Menu (☰) */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light);
+    margin: 4px 0;
+}
+
+/* ✅ Logo in Navbar */
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+/* ✅ Mobile Side Menu */
+.mobile-side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Hidden by default */
+    width: 250px;
+    height: 100vh;
+    background-color: var(--dark);
+    box-shadow: 2px 0 10px var(--gray);
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 60px;
+}
+
+.mobile-side-menu.open {
+    left: 0;
+    /* Slide in */
+    z-index: 1000;
+    padding-top: 30px;
+}
+
+/* ✅ Close Button (✖) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: var(--light);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: var(--primary);
+}
+
+/* ✅ Mobile Menu Items */
+.mobile-side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 7px;
+    overflow-y: auto;
+}
+
+/* ✅ Individual Menu Item */
+.menu-items {
+    width: 70%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.menu-items:hover {
+    background-color: var(--primary);
+}
+
+/* ✅ Menu Item Links */
+.menu-items a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 18px;
+    width: 100%;
+}
+
+/* ✅ Menu Icons */
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.menu-icon span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--light);
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.menu-icon:hover span {
+    background-color: var(--primary);
+}
+
+.menu-open:hover span:nth-child(1) {
+    transform: translateY(1px) rotate(25deg);
+}
+
+.menu-open:hover span:nth-child(2) {
+    display: none;
+}
+
+.menu-open:hover span:nth-child(3) {
+    transform: translateY(-1px) rotate(-25deg);
+}
+
+/* ✅ Profile Account Menu */
+.account-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+}
+
+.account-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+.menu-text {
+    color: var(--light);
+}
+
+/* ✅ Responsive Design */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .top-navbar {
+        height: 55px;
+        padding: 0 10px;
+    }
+
+    .menu-icon span {
+        width: 22px;
+        height: 3px;
+    }
+
+    .logo img {
+        height: 25px;
+        margin-top: 30%;
+        visibility: hidden;
+    }
+
+    .mobile-side-menu {
+        width: 220px;
+    }
+
+    .menu-items a {
+        font-size: 16px;
+    }
+
+    .close-btn {
+        font-size: 22px;
+    }
+}

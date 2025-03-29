@@ -1,0 +1,199 @@
+/* Notifications Container */
+.notifications-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* User Preferences Section */
+.preferences-section {
+    flex: 1;
+    max-width: 40%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preferences-section h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: #061b28;
+    font-weight: bold;
+}
+
+/* Preference Dropdowns */
+.preference-item {
+    margin-bottom: 10px;
+}
+
+.preference-label {
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.preference-dropdown {
+    position: relative;
+}
+
+.preference-button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 6px;
+}
+
+.preference-button:hover {
+    background:violet;
+}
+
+/* Dropdown Content */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-menu div:hover {
+    background: #f1f1f1;
+}
+.preferences input{
+    margin-top: 2%;
+
+}
+
+.internship-button{
+    background: #061b28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.workshop-button{
+    background: #061b28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.job-button{
+    background: #061b28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.save-button{
+    color: white;
+    background-color: green;
+    margin-top: 80px;
+    padding: 10px;
+}
+.reset-button{
+    color:white;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.h2{
+    color: #061b28;
+    font-size: large;
+    font-weight: bold;
+}
+.filter-fields{
+    border: solid 2px #061b28;
+}
+
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 480px) {
+    .notifications-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Preferences Section */
+    .preferences-section {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .preferences-section h2 {
+        font-size: 24px; /* Reduce heading size */
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    /* Dropdown & Buttons */
+    .preference-button {
+        font-size: 14px; /* Increase button text size */
+        padding: 12px;
+    }
+
+    .dropdown-menu div {
+        padding: 8px;
+    }
+
+    /* Buttons */
+    .internship-button,
+    .workshop-button,
+    .job-button {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%; /* Full-width buttons */
+        text-align: center;
+    }
+
+    .save-button,
+    .reset-button {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Filters */
+    .filter-fields {
+        border-width: 1px; /* Reduce border thickness */
+        padding: 8px;
+    }
+
+    .h2 {
+        font-size: medium;
+        text-align: center;
+    }
+}

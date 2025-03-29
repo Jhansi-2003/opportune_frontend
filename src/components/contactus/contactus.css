@@ -1,0 +1,194 @@
+/* General styling for the entire page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.contactus-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 85px;    
+    /* background-color: #ccc; */
+
+}
+
+.contactus-page h1 {
+    font-size: 2.5rem;
+    color: var(--light);
+    margin-bottom: 20px;
+    margin: 30px;
+    border: solid 3px var(--dark);
+    width: 50%;
+    border-radius: 50px;
+    background-color: var(--dark);
+}
+
+/* Card styling */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* border-radius: 30px; */
+    width: 100%;
+    height: 50%;
+    max-width: 1000px;
+    margin: 0%;
+    overflow: hidden;
+    background-color: var(--light);
+    /* border: solid 3px var(--dark);   */
+    padding: 0px 30px 0px 30px; 
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+/* Left section: Image styling */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 50%;
+    margin: 20px;
+}
+
+.contact-img {
+    max-width: 120%;
+    height: auto;
+    object-fit: cover;
+    padding: 15px;
+}
+
+/* Right section: Contact form */
+.contactform {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 5%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 7.5px 0px 7.5px 0px;
+    font-size: 20px;
+    color: var(--primary);
+}
+.form-group input{
+    border: solid 2px var(--dark);
+    border-radius: 20px;
+    font-size: 20px;
+    padding:10px;
+    width: 150%;
+    max-width: 180%;
+}
+.form-group textarea{
+    border: solid 2px var(--dark);
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150%;
+    max-width: 180%;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.submit-button{
+    width: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding:5px;
+    margin: 5px;
+    background-color: green;
+    color: var(--light);
+}
+.submit-button:hover{
+    background-color: red;
+}
+.error-message{
+    font-size: 15px;
+    margin: 0%;
+    width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .image{
+        margin: 0%;
+    }
+    .contactus-page{
+        margin-left: 0px;
+        margin-top: 55px;
+        padding: 10px
+    }
+    .contact{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .contactus-page h1{
+        font-size: 17px;
+        margin: 10px;
+    }
+    .contactform{
+        margin: 0%;
+    }
+    .form-group{
+        font-size: 10px;
+    }
+    .form-group textarea{
+        font-size: 10px;
+    }
+    .form-group input{
+        font-size: 10px;
+    }
+    .submit-button{
+        font-size: 15px;
+    }
+    .error-message{
+        font-size: 9px;
+    }
+}
+@media screen and (width: 768px){
+    .image{
+        margin: 0%;
+    }
+    .contactus-page{
+        margin-left: 55px;
+        padding: 10px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 0%;
+        width: 600px;
+    }
+    .contactform{
+        margin: 0%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width:884px){
+    .image{
+        margin: 0%;
+    }
+    .contactus-page{
+        padding: 10px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 0%;
+        width: 650px;
+    }
+    .contactform{
+        margin: 0%;
+    }
+}

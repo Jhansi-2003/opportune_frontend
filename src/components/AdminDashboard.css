@@ -1,0 +1,135 @@
+/* Admin Dashboard - Improved Styling */
+.admin-dashboard {
+    padding: 20px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+ 
+  
+  /* Grid Layout */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 15px;
+  }
+  
+  /* Chart Containers */
+  .chart-container {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Section Titles */
+  .chart-container h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #444;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+
+
+  /* Admin Dashboard - Improved Styling */
+.admin-dashboard {
+  padding: 20px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dashboard Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Chart Containers */
+.chart-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+.chart-wrapper {
+  display: flex;
+  gap: 20px; /* space between the two containers */
+}
+
+
+
+.chart-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.chart-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .chart-container {
+    padding: 15px;
+  }
+
+  .chart-container h2 {
+    font-size: 18px;
+  }
+}
+
+/* Mobile-Friendly Layout */
+@media (max-width: 480px) {
+  .admin-dashboard {
+    padding: 15px;
+  }
+
+  .dashboard-grid {
+    gap: 10px;
+  }
+
+  .chart-container {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .chart-container h2 {
+    font-size: 16px;
+  }
+}

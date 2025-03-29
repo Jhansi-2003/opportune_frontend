@@ -1,0 +1,65 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  overflow-y: auto;
+  height: 100%;
+}
+.App {
+  display: flex;
+  height: 100%; /* Ensure the full viewport height */
+  width: 100%; /* Ensure the full viewport width */
+  overflow: hidden; /* Prevent overflow on the x-axis */
+}
+
+.NavBar {
+  width: 30vw; /* Fixed width for the navbar */
+  height: 100vh; /* Make it occupy the full height of the viewport */
+  position: fixed; /* Ensure the navbar stays fixed on the left */
+  top: 0; /* Stick to the top of the screen */
+  left: 0; /* Stick to the left of the screen */
+  z-index: 999; /* Ensure it's above other content */
+  overflow-y: auto; /* Allow vertical scrolling within the navbar, if needed */
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto; 
+  height: 100vh; 
+}
+@media screen and (max-width: 480px){
+  .main-content{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  .main-content{
+    width: 50%;
+  }
+}
+
+
+/* App Layout */
+.App {
+  display: flex;
+  height: 100vh; /* Ensure the full viewport height */
+  width: 100vw; /* Ensure the full viewport width */
+  overflow: hidden; /* Prevent overflow on the x-axis */
+}
+
+
+
+.main-content {
+  flex-grow: 1; /* Allow the content to take the remaining space */
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+  height: 100vh; /* Ensure it matches the viewport height */
+}
