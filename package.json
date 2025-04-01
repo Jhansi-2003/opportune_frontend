@@ -34,7 +34,10 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
+  "homepage": "https://<Jhansi-2003>.github.io/<Final_Project>",
   "scripts": {
+      "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -57,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
