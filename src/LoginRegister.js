@@ -34,7 +34,7 @@ function LoginRegister() {
 
         try {
             // Step 1: Save to MySQL
-            const res = await axios.post("https://opportune-backend-1.onrender.com/api/register", {
+            const res = await axios.post("https://opportune-backend-1.onrender.com/register", {
                 username,
                 email,
                 password
