@@ -29,7 +29,7 @@ const Workshops = () => {
     useEffect(() => {
         const fetchWorkshops = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/workshops");
+                const response = await axios.get("http://localhost:5005/api/workshops");
                 setWorkshops(response.data.workshops);
                 setFilteredWorkshops(response.data.workshops);
             } catch (error) {
